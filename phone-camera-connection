@@ -1,0 +1,6 @@
+#include <v4l2loopback/v4l2loopback.h>
+
+void DeviceHandler::initializeCamera() {
+    // Creating virtual camera...
+    system("modprobe v4l2loopback video_nr=2 card_label='Phone Camera'");
+}
